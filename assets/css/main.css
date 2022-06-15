@@ -1,8 +1,11 @@
-body {
-  background: #000;
+#home {
+  background: #666;
 }
 
-body section {
-  color: yellow;
+#work {
+  background: #f00;
 }
-/*# sourceMappingURL=main.css.map */
+
+#contact {
+  background: #000;
+}
