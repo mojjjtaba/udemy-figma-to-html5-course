@@ -1,7 +1,10 @@
-body {
-    background: #000;
+@import "./reset";
 
-    section {
-        color: yellow; 
-    }
-}
+@import "./sidebar";
+
+@import "./home";
+@import "./about";
+@import "./resume";
+@import "./work";
+@import "./testimonial";
+@import "./contact";        

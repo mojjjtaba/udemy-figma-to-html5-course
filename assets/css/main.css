@@ -1,8 +1,17 @@
-body {
-  background: #000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body section {
-  color: yellow;
+#home {
+  background: #666;
 }
-/*# sourceMappingURL=main.css.map */
+
+#work {
+  background: #f00;
+}
+
+#contact {
+  background: #000;
+}
