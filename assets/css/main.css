@@ -14,6 +14,14 @@ p {
   font-family: "Ubuntu", sans-serif;
 }
 
+body {
+  background: #151516;
+}
+
+* {
+  color: #fff;
+}
+
 #sidebar {
   background: #f00;
 }
