@@ -10,6 +10,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 p {
   font-family: "Ubuntu", sans-serif;
 }
@@ -30,6 +40,39 @@ main > section {
 }
 main > section.active {
   display: block;
+}
+
+.btn-custom-blue {
+  display: inline-block;
+  position: relative;
+  background: #262F48;
+  padding: 10px 52px;
+  text-decoration: none;
+  color: #658DF2;
+  border-radius: 8px;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.btn-custom-blue:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #658DF2;
+  opacity: 0.3;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: -1;
+  transition: all 0.3s;
+}
+.btn-custom-blue:hover {
+  color: #fff;
+}
+.btn-custom-blue:hover:before {
+  transform: translate(-50%, -50%) scale(2);
 }
 
 #sidebar {
@@ -151,6 +194,82 @@ main > section.active {
   top: -4px;
   left: 3px;
   border-radius: 50%;
+}
+
+#home {
+  background-image: url("../images/bg-shape.png");
+  background-repeat: no-repeat;
+  background-position: 40vw -24px;
+}
+#home .info {
+  padding-top: 281px;
+}
+#home .info img.person-circle {
+  margin-bottom: 24px;
+}
+#home .info h1 {
+  margin-bottom: 24px;
+}
+#home .info h1 span {
+  color: #B6B7BA;
+}
+#home .info h2 {
+  color: #B6B7BA;
+  margin-bottom: 16px;
+}
+#home .info p {
+  max-width: 430px;
+  margin-bottom: 74px;
+}
+#home .info .socials {
+  margin-top: 191px;
+}
+#home .info .socials ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#home .info .socials ul li {
+  margin-right: 8px;
+}
+#home .info .socials ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 9px 11px;
+  transition: all 0.3s;
+}
+#home .info .socials ul li a:hover {
+  background: #1E1E20;
+  border-radius: 6px;
+}
+#home .info .socials ul li a:hover span,
+#home .info .socials ul li a:hover i {
+  color: #fff;
+}
+#home .info .socials ul li a i {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #B6B7BA;
+  transition: all 0.3s;
+}
+#home .info .socials ul li a span {
+  color: #808185;
+  transition: all 0.3s;
+}
+#home .image {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#home .image img {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+#home .image img:hover {
+  filter: saturate(200%) sepia(1);
 }
 
 #work {

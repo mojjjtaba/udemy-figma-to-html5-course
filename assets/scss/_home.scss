@@ -1,3 +1,92 @@
 #home {
-  
+    background-image: url('../images/bg-shape.png');
+    background-repeat: no-repeat;
+    background-position: 40vw -24px;
+
+    .info {
+        padding-top: 281px;
+
+        img.person-circle {
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+
+            span {
+                color: $gray;
+            }
+        }
+
+        h2 {
+            color: $gray;
+            margin-bottom: 16px;
+        }
+
+        p {
+            max-width: 430px;
+            margin-bottom: 74px;
+        }
+
+        .socials {
+            margin-top: 191px;
+
+            ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-right: 8px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        padding: 9px 11px;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            background: $secondary;
+                            border-radius: 6px;
+                            
+                            span,
+                            i {
+                                color: #fff;
+                            }
+                        }
+
+                        i {
+                            font-size: 18px;
+                            margin-right: 8px;
+                            color: $gray;
+                            transition: all 0.3s;
+                        }
+
+                        span {
+                            color: $secondary_gray;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .image {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        img {
+            border-radius: 8px;
+            transition: all 0.3s;
+
+            &:hover {
+                filter: saturate(200%) sepia(1);
+            }
+        }
+    }
 }
