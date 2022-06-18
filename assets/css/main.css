@@ -153,10 +153,6 @@ main > section.active {
   border-radius: 50%;
 }
 
-#home {
-  background: #666;
-}
-
 #work {
   background: #f00;
 }
