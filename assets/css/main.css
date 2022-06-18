@@ -213,9 +213,18 @@ main > section.active {
 #home .info h1 span {
   color: #B6B7BA;
 }
-#home .info h2 {
-  color: #B6B7BA;
+#home .info .field {
+  display: flex;
+  align-items: center;
   margin-bottom: 16px;
+}
+#home .info .field h2 {
+  color: #B6B7BA;
+  margin: 0;
+}
+#home .info .field span {
+  font-size: 21px;
+  margin-left: 2px;
 }
 #home .info p {
   max-width: 430px;

@@ -14,3 +14,14 @@ navLinks.forEach((item) => {
 document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', function(){
     document.querySelector('#sidebar').classList.toggle('open')
 })
+
+
+
+var options = {
+    strings: ['Front-End web developer', 'Back-End web developer', 'Web designer'],
+    loop: true,
+    typeSpeed: 70,
+    backSpeed: 10
+  };
+  
+new Typed('.field h2', options);
