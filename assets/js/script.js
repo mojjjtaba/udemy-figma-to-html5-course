@@ -25,3 +25,11 @@ var options = {
   };
   
 new Typed('.field h2', options);
+
+
+
+for(let i = 1; i <= 15; i++) {
+    let meteor = document.createElement('span');
+    meteor.classList = 'meteor'
+    document.querySelector('#home .meteor-shower').append(meteor);
+}
