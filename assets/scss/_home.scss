@@ -108,7 +108,7 @@
         overflow: hidden;
         z-index: -1;
 
-        @for $i from 1 to 16 {
+        @for $i from 1 through 15 {
             .meteor:nth-child(#{$i}) {
                 position: absolute;
                 width: 60px;
@@ -116,10 +116,10 @@
                 background: url('../images/meteor.png');
                 background-repeat: no-repeat;
                 opacity: 0;
-                left: unquote(random(80) + 'vw');
-                top: unquote(random(100) + 'vh');
-                animation: meteor-shower unquote(random(5000) + 3000 + 'ms') linear infinite;
-                animation-delay: unquote(random(5000) + 'ms'); 
+                left: #{random(80) + 'vw'};  
+                top: #{random(80) + 'vh'};
+                animation: meteor-shower #{random(5000) + 3000 + 'ms'} linear infinite;
+                animation-delay: #{random(5000) + 'ms'}; 
             }
         }
     }

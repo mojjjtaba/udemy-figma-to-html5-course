@@ -33,3 +33,4 @@ for(let i = 1; i <= 15; i++) {
     meteor.className = 'meteor';
     document.querySelector('#home .meteor-shower').append(meteor)
 }
+
