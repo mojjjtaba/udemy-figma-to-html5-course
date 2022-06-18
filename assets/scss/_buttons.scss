@@ -1,4 +1,4 @@
-.btn-custom-dark {
+.btn-custom-blue {
     position: relative;
     display: inline-block;
     padding: 10px 52px;
@@ -15,21 +15,26 @@
         position: absolute;
         width: 100px;
         height: 100px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
         background: $primary;
         opacity: 0.3;
         border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
         z-index: -1;
-        transition: all 0.3s;        
+        transition: all 0.5s;        
     }
 
     &:hover {
         color: #fff;
 
         &:before {
-            transform: translate(-50%, -50%) scale(3);
+            transform: translate(-50%, -50%) scale(2);
         }
     }
+}
+
+.btn-custom-dark {
+    @extend .btn-custom-blue;
+    background: $secondary;
 }

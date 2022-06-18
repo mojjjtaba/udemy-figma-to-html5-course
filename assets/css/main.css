@@ -32,7 +32,7 @@ body {
   color: #fff;
 }
 
-.btn-custom-dark {
+.btn-custom-blue, .btn-custom-dark {
   position: relative;
   display: inline-block;
   padding: 10px 52px;
@@ -44,25 +44,29 @@ body {
   z-index: 1;
   transition: all 0.3s;
 }
-.btn-custom-dark:before {
+.btn-custom-blue:before, .btn-custom-dark:before {
   content: "";
   position: absolute;
   width: 100px;
   height: 100px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
   background: #658DF2;
   opacity: 0.3;
   border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
   z-index: -1;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
-.btn-custom-dark:hover {
+.btn-custom-blue:hover, .btn-custom-dark:hover {
   color: #fff;
 }
-.btn-custom-dark:hover:before {
-  transform: translate(-50%, -50%) scale(3);
+.btn-custom-blue:hover:before, .btn-custom-dark:hover:before {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.btn-custom-dark {
+  background: #1E1E20;
 }
 
 main {
@@ -298,12 +302,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 22vw;
-  top: 82vh;
-  -webkit-animation: meteor-shower 6212ms linear infinite;
-          animation: meteor-shower 6212ms linear infinite;
-  -webkit-animation-delay: 756ms;
-          animation-delay: 756ms;
+  left: 29vw;
+  top: 87vh;
+  -webkit-animation: meteor-shower 7754ms linear infinite;
+          animation: meteor-shower 7754ms linear infinite;
+  -webkit-animation-delay: 3204ms;
+          animation-delay: 3204ms;
 }
 #home .meteor-shower .meteor:nth-child(2) {
   position: absolute;
@@ -312,12 +316,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 39vw;
-  top: 27vh;
-  -webkit-animation: meteor-shower 4257ms linear infinite;
-          animation: meteor-shower 4257ms linear infinite;
-  -webkit-animation-delay: 3081ms;
-          animation-delay: 3081ms;
+  left: 11vw;
+  top: 48vh;
+  -webkit-animation: meteor-shower 4289ms linear infinite;
+          animation: meteor-shower 4289ms linear infinite;
+  -webkit-animation-delay: 1944ms;
+          animation-delay: 1944ms;
 }
 #home .meteor-shower .meteor:nth-child(3) {
   position: absolute;
@@ -326,12 +330,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 64vw;
-  top: 4vh;
-  -webkit-animation: meteor-shower 5189ms linear infinite;
-          animation: meteor-shower 5189ms linear infinite;
-  -webkit-animation-delay: 831ms;
-          animation-delay: 831ms;
+  left: 44vw;
+  top: 36vh;
+  -webkit-animation: meteor-shower 3744ms linear infinite;
+          animation: meteor-shower 3744ms linear infinite;
+  -webkit-animation-delay: 2462ms;
+          animation-delay: 2462ms;
 }
 #home .meteor-shower .meteor:nth-child(4) {
   position: absolute;
@@ -341,11 +345,11 @@ main > section.active {
   background-repeat: no-repeat;
   opacity: 0;
   left: 1vw;
-  top: 4vh;
-  -webkit-animation: meteor-shower 3237ms linear infinite;
-          animation: meteor-shower 3237ms linear infinite;
-  -webkit-animation-delay: 3132ms;
-          animation-delay: 3132ms;
+  top: 71vh;
+  -webkit-animation: meteor-shower 7279ms linear infinite;
+          animation: meteor-shower 7279ms linear infinite;
+  -webkit-animation-delay: 2103ms;
+          animation-delay: 2103ms;
 }
 #home .meteor-shower .meteor:nth-child(5) {
   position: absolute;
@@ -354,12 +358,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 50vw;
-  top: 67vh;
-  -webkit-animation: meteor-shower 5213ms linear infinite;
-          animation: meteor-shower 5213ms linear infinite;
-  -webkit-animation-delay: 1204ms;
-          animation-delay: 1204ms;
+  left: 10vw;
+  top: 45vh;
+  -webkit-animation: meteor-shower 3547ms linear infinite;
+          animation: meteor-shower 3547ms linear infinite;
+  -webkit-animation-delay: 126ms;
+          animation-delay: 126ms;
 }
 #home .meteor-shower .meteor:nth-child(6) {
   position: absolute;
@@ -368,12 +372,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 58vw;
-  top: 96vh;
-  -webkit-animation: meteor-shower 3382ms linear infinite;
-          animation: meteor-shower 3382ms linear infinite;
-  -webkit-animation-delay: 3163ms;
-          animation-delay: 3163ms;
+  left: 57vw;
+  top: 28vh;
+  -webkit-animation: meteor-shower 6482ms linear infinite;
+          animation: meteor-shower 6482ms linear infinite;
+  -webkit-animation-delay: 3158ms;
+          animation-delay: 3158ms;
 }
 #home .meteor-shower .meteor:nth-child(7) {
   position: absolute;
@@ -382,12 +386,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 80vw;
-  top: 3vh;
-  -webkit-animation: meteor-shower 7844ms linear infinite;
-          animation: meteor-shower 7844ms linear infinite;
-  -webkit-animation-delay: 786ms;
-          animation-delay: 786ms;
+  left: 47vw;
+  top: 48vh;
+  -webkit-animation: meteor-shower 4069ms linear infinite;
+          animation: meteor-shower 4069ms linear infinite;
+  -webkit-animation-delay: 1607ms;
+          animation-delay: 1607ms;
 }
 #home .meteor-shower .meteor:nth-child(8) {
   position: absolute;
@@ -396,12 +400,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 19vw;
-  top: 19vh;
-  -webkit-animation: meteor-shower 4903ms linear infinite;
-          animation: meteor-shower 4903ms linear infinite;
-  -webkit-animation-delay: 2560ms;
-          animation-delay: 2560ms;
+  left: 8vw;
+  top: 27vh;
+  -webkit-animation: meteor-shower 4523ms linear infinite;
+          animation: meteor-shower 4523ms linear infinite;
+  -webkit-animation-delay: 2040ms;
+          animation-delay: 2040ms;
 }
 #home .meteor-shower .meteor:nth-child(9) {
   position: absolute;
@@ -410,12 +414,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 28vw;
-  top: 49vh;
-  -webkit-animation: meteor-shower 3260ms linear infinite;
-          animation: meteor-shower 3260ms linear infinite;
-  -webkit-animation-delay: 4481ms;
-          animation-delay: 4481ms;
+  left: 34vw;
+  top: 41vh;
+  -webkit-animation: meteor-shower 4138ms linear infinite;
+          animation: meteor-shower 4138ms linear infinite;
+  -webkit-animation-delay: 2159ms;
+          animation-delay: 2159ms;
 }
 #home .meteor-shower .meteor:nth-child(10) {
   position: absolute;
@@ -424,12 +428,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 67vw;
-  top: 77vh;
-  -webkit-animation: meteor-shower 5683ms linear infinite;
-          animation: meteor-shower 5683ms linear infinite;
-  -webkit-animation-delay: 1326ms;
-          animation-delay: 1326ms;
+  left: 60vw;
+  top: 11vh;
+  -webkit-animation: meteor-shower 5278ms linear infinite;
+          animation: meteor-shower 5278ms linear infinite;
+  -webkit-animation-delay: 4415ms;
+          animation-delay: 4415ms;
 }
 #home .meteor-shower .meteor:nth-child(11) {
   position: absolute;
@@ -438,12 +442,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 28vw;
-  top: 45vh;
-  -webkit-animation: meteor-shower 5189ms linear infinite;
-          animation: meteor-shower 5189ms linear infinite;
-  -webkit-animation-delay: 467ms;
-          animation-delay: 467ms;
+  left: 45vw;
+  top: 43vh;
+  -webkit-animation: meteor-shower 3819ms linear infinite;
+          animation: meteor-shower 3819ms linear infinite;
+  -webkit-animation-delay: 31ms;
+          animation-delay: 31ms;
 }
 #home .meteor-shower .meteor:nth-child(12) {
   position: absolute;
@@ -452,12 +456,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 46vw;
-  top: 52vh;
-  -webkit-animation: meteor-shower 4192ms linear infinite;
-          animation: meteor-shower 4192ms linear infinite;
-  -webkit-animation-delay: 3532ms;
-          animation-delay: 3532ms;
+  left: 42vw;
+  top: 79vh;
+  -webkit-animation: meteor-shower 7240ms linear infinite;
+          animation: meteor-shower 7240ms linear infinite;
+  -webkit-animation-delay: 1697ms;
+          animation-delay: 1697ms;
 }
 #home .meteor-shower .meteor:nth-child(13) {
   position: absolute;
@@ -466,12 +470,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 80vw;
-  top: 87vh;
-  -webkit-animation: meteor-shower 5972ms linear infinite;
-          animation: meteor-shower 5972ms linear infinite;
-  -webkit-animation-delay: 4422ms;
-          animation-delay: 4422ms;
+  left: 47vw;
+  top: 52vh;
+  -webkit-animation: meteor-shower 5905ms linear infinite;
+          animation: meteor-shower 5905ms linear infinite;
+  -webkit-animation-delay: 3589ms;
+          animation-delay: 3589ms;
 }
 #home .meteor-shower .meteor:nth-child(14) {
   position: absolute;
@@ -480,12 +484,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 22vw;
+  left: 36vw;
   top: 42vh;
-  -webkit-animation: meteor-shower 6676ms linear infinite;
-          animation: meteor-shower 6676ms linear infinite;
-  -webkit-animation-delay: 4161ms;
-          animation-delay: 4161ms;
+  -webkit-animation: meteor-shower 4373ms linear infinite;
+          animation: meteor-shower 4373ms linear infinite;
+  -webkit-animation-delay: 2866ms;
+          animation-delay: 2866ms;
 }
 #home .meteor-shower .meteor:nth-child(15) {
   position: absolute;
@@ -494,12 +498,12 @@ main > section.active {
   background: url("../images/meteor.png");
   background-repeat: no-repeat;
   opacity: 0;
-  left: 76vw;
-  top: 61vh;
-  -webkit-animation: meteor-shower 3757ms linear infinite;
-          animation: meteor-shower 3757ms linear infinite;
-  -webkit-animation-delay: 1050ms;
-          animation-delay: 1050ms;
+  left: 51vw;
+  top: 12vh;
+  -webkit-animation: meteor-shower 5968ms linear infinite;
+          animation: meteor-shower 5968ms linear infinite;
+  -webkit-animation-delay: 4093ms;
+          animation-delay: 4093ms;
 }
 
 @-webkit-keyframes meteor-shower {
