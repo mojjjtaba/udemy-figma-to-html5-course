@@ -1,3 +1,139 @@
 #home {
-    background: #666;
+    background-image: url('../images/bg-shape.png');
+    background-repeat: no-repeat;
+    background-position: 40vw -20px;
+
+    .info {
+        padding-top: 281px;
+
+        h1 {
+            margin-top: 24px;
+            margin-bottom: 24px;
+
+            span {
+                color: $gray;
+            }
+        }
+
+        .field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            height: 29px;
+
+            h2 {
+                margin-bottom: 0;
+                color: $gray;
+            }
+
+            span {
+                font-size: 21px;
+                margin-left: 1px;
+            }
+        }
+
+        p {
+            margin-bottom: 64px;
+            max-width: 430px;
+        }
+
+        .socials {
+            margin-top: 190px;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-right: 8px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        padding: 8px 11px;
+                        border-radius: 6px;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            background: $secondary;
+
+                            i,
+                            span {
+                                color: #fff;
+                            }
+                        }
+
+                        i {
+                            margin-right: 8px;
+                            color: $gray;
+                            transition: all 0.3s;
+                        }
+
+                        span {
+                            color: $secondary_gray;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .image {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-left: auto;
+            transition: all 0.3s;
+
+            &:hover {
+                filter: saturate(200%) sepia(1);
+            }
+        }
+    }
+
+    .meteor-shower {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -1;
+
+        @for $i from 1 to 16 {
+            .meteor:nth-child(#{$i}) {
+                position: absolute;
+                width: 60px;
+                height: 49px;
+                background: url('../images/meteor.png');
+                background-repeat: no-repeat;
+                opacity: 0;
+                left: unquote(random(80) + 'vw');
+                top: unquote(random(100) + 'vh');
+                animation: meteor-shower unquote(random(5000) + 3000 + 'ms') linear infinite;
+                animation-delay: unquote(random(5000) + 'ms'); 
+            }
+        }
+    }
+}
+
+@keyframes meteor-shower {
+    0% {
+        transform: translate(300%, -300%);
+        opacity: 1;
+    }
+
+    10% {
+        transform: translate(-300%, 300%);
+        opacity: 0;
+    }
 }

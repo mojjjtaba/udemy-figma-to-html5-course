@@ -1,8 +1,24 @@
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    #home {
+        .image {
+            height: unset;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            img {
+                margin-right: auto;
+                margin-left: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
     #sidebar {
         background: darken($secondary, 30%);
         padding-right: 60px;
         transform: translateX(-100%);
+        z-index: 10;
         transition: all 0.3s;
 
         &.open {
@@ -29,14 +45,44 @@
                 }
             }
 
-            > span {
+            >span {
                 display: none;
+            }
+        }
+    }
+
+    #home {
+        .info {
+            padding-top: 80px;
+
+            .socials {
+                margin-top: 70px;
+
+                ul {
+                    justify-content: space-between;
+
+                    li {
+                        margin-right: 0;
+                    }
+                }
             }
         }
     }
 
     main {
         padding-left: 0;
-        padding-top: 50px;
+
+        >section {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
     }
 }
