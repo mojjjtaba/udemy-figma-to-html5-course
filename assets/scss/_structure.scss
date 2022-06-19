@@ -3,6 +3,8 @@ main {
 
     > section {
         display: none;
+        padding-right: 114px;
+        padding-left: 114px;
 
         &.active {
             display: block;
