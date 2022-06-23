@@ -1,13 +1,51 @@
 main {
     padding-left: 102px;
 
-    > section {
+    >section {
         display: none;
-        padding-left: 114px;
-        padding-right: 114px;
+        padding-left: 32px;
+        padding-right: 32px;
+
+        &:not(#home) {
+            padding-top: 64px;
+        }
 
         &.active {
             display: block;
+        }
+
+        .header-with-bg {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 9px;
+                left: -59px;
+            }
+
+            h1 {
+                position: relative;
+                transition: all 0.6s;
+
+                &:before {
+                    content: attr(data-content);
+                    position: absolute;
+                    width: 0;
+                    height: 100%;
+                    color: $primary;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    transition: all 0.6s;
+                }
+
+                &:hover {
+                    color: transparent;
+
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

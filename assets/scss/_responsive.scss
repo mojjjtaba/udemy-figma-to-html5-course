@@ -1,3 +1,17 @@
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #about_me {
+        .languages-skills .languages-key-skills {
+            padding-right: 12px;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     #home {
         .image {
@@ -74,9 +88,8 @@
     main {
         padding-left: 0;
 
-        >section {
-            padding-left: 32px;
-            padding-right: 32px;
+        >section .header-with-bg img {
+            left: 0;
         }
     }
 
@@ -86,5 +99,17 @@
 
     h2 {
         font-size: 20px;
+    }
+
+    #about_me {
+        .hero-section {
+            .image img {
+                width: 100%;
+            }
+
+            .info .buttons a {
+                margin-bottom: 16px;
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
+    margin: 0;
 }
 
 h1 {
@@ -12,11 +13,19 @@ h2 {
     font-weight: 700;
 }
 
-p {
+h3 {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    line-height: 175%;
 }
 
 body {
+    font-family: 'Ubuntu', sans-serif;
     background: $dark_bg;
 }
 
