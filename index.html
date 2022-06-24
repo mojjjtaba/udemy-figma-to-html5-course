@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
     <div id="sidebar">
         <div class="toggle-sidebar">
@@ -20,14 +24,14 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#home" class="active">
+                    <a href="#home">
                         <i class="las la-home"></i>
                         <span>Home</span>
                     </a>
                     <span>Home</span>
                 </li>
                 <li>
-                    <a href="#about_me">
+                    <a href="#about_me" class="active">
                         <i class="las la-address-card"></i>
                         <span>About Me</span>
                     </a>
@@ -70,7 +74,7 @@
         </div>
     </div>
     <main>
-        <section id="home" class="active">
+        <section id="home">
             <div class="meteor-shower"></div>
             <div class="container">
                 <div class="row">
@@ -81,8 +85,8 @@
                             <h2></h2>
                         </div>
                         <p>
-                            I design and develop services for customers of all sizes, 
-                            specializing in creating stylish, modern websites, 
+                            I design and develop services for customers of all sizes,
+                            specializing in creating stylish, modern websites,
                             web services and online stores.
                         </p>
                         <a class="btn-custom-blue" href="assets/files/cv.pdf" download>Download CV</a>
@@ -121,15 +125,78 @@
                 </div>
             </div>
         </section>
-        <section id="about_me">About</section>
+        <section id="about_me" class="active">
+            <div class="container">
+                <div class="row hero-section">
+                    <div class="col-lg-6 image">
+                        <img src="assets/images/person-about.png" alt="person about">
+                    </div>
+                    <div class="col-lg-6 info">
+                        <header class="has-bg">
+                            <img src="assets/images/h1-bg.png" alt="h1 bg">
+                            <h1>About Me</h1>
+                        </header>
+                        <h2>Front-End web developer</h2>
+                        <p>
+                            I'm a web developer with +5 years experience. I work on projects as a
+                            Front-End and Back-End developer. as a Front-End developer, I'm Fluent in HTML, CSS,
+                            Bootstrap, SCSS, Javascript, jQuery, Vue.js, and as a Back-End
+                            developer, I'm fluent in PHP, WordPress, and Laravel.<br>
+                            This is my motto: "Everyone can start, but only a few can finish"
+                        </p>
+                        <div class="items">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="item">
+                                            <span class="title">Name:</span>
+                                            <span class="value">Mojtaba</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="title">Age:</span>
+                                            <span class="value">29</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="title">Location:</span>
+                                            <span class="value">Frankfurt</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="item">
+                                            <span class="title">Years of experience:</span>
+                                            <span class="value">+5 Years</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="title">Phone:</span>
+                                            <span class="value">+1 234 567 8901</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="title">E-mail:</span>
+                                            <span class="value">smo.hayati@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a href="assets/files/cv.pdf" class="btn-custom-blue" download>Download CV</a>
+                            <a href="#contact_me" class="btn-custom-blue" download>Message me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="my_resume">Resume</section>
         <section id="my_work">Work</section>
         <section id="testimonial">Testimonial</section>
         <section id="contact_me">Contact</section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
