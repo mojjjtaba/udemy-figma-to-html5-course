@@ -1,11 +1,10 @@
-@media (max-width: 991px) {
-    main {
-        >section {
-            padding-right: 32px;
-            padding-left: 32px;
-        }
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
     }
+}
 
+@media (max-width: 991px) {
     #home {
         .image {
             justify-content: flex-start;
@@ -63,7 +62,11 @@
 
     main {
         padding-left: 0;
-        padding-top: 50px;
+
+        > section header.has-bg img {
+            left: -13px;
+            top: -4px;
+        }
     }
 
     #home {
@@ -77,6 +80,21 @@
 
                 ul {
                     justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    #about_me {
+        .hero .info .buttons {
+            flex-direction: column;
+
+            a {
+                width: 100%;
+                text-align: center;
+
+                &:first-child {
+                    margin-bottom: 16px;
                 }
             }
         }
