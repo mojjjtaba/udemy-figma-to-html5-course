@@ -33,3 +33,8 @@
         }
     }
 }
+
+.btn-custom-dark {
+    @extend .btn-custom-blue;
+    background: $secondary;
+}

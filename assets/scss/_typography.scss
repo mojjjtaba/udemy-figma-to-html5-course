@@ -13,11 +13,12 @@ h2 {
 }
 
 p {
-    font-family: 'Ubuntu', sans-serif;
+    line-height: 175%;
 }
 
 body {
     background: $dark_bg;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 * {
