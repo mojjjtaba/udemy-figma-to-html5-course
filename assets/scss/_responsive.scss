@@ -4,6 +4,18 @@
     }
 }
 
+@media (max-width: 1199px) {
+    #my_resume {
+        .education {
+            padding-right: 12px;
+        }
+    
+        .experience {
+            padding-left: 12px;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     #home {
         .image {

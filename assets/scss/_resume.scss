@@ -1,5 +1,142 @@
 #my_resume {
+    background-image: url(../images/bg-shape.png);
+    background-repeat: no-repeat;
+    background-position: 40vw 444px;
+    padding-bottom: 115px;
+
     header.has-bg {
         margin-bottom: 83px;
+    }
+
+    header.custom {
+        position: relative;
+        text-align: center;
+        margin-bottom: 42px;
+
+        h2 {
+            display: inline-block;
+            background: $dark_bg;
+            padding: 0 24px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background: $secondary;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: -1;
+            }
+        }
+    }
+
+    .items {
+        margin-top: 64px;
+
+        .item {
+            display: flex;
+
+            &:not(:last-child) {
+                margin-bottom: 42px;
+            }
+
+            &.last {
+                .icon i,
+                h2 {
+                    color: $primary;
+                }
+            }
+    
+            .icon {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 46px;
+                height: 46px;
+                margin-right: 46px;
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 50%;
+                font-size: 18px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 162px;
+                    top: 70px;
+                    background: $secondary;
+                }
+            }
+    
+            .box {
+                position: relative;
+                padding: 32px;
+                background: rgba($secondary, 0.75);
+                border-radius: 4px;
+                flex-grow: 1;
+                overflow: hidden;
+                z-index: 1;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0;
+                    background: darken($primary, 15%);
+                    opacity: 0.4;
+                    z-index: -1;
+                    transition: all 0.3s;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0;
+                    background: darken($secondary, 30%);
+                    opacity: 0.4;
+                    z-index: -1;
+                    transition: all 0.3s 0.3s;
+                }
+
+                &:hover {
+                    &:before, 
+                    &:after {
+                        width: 100%;
+                    }
+                }
+
+                .year {
+                    display: flex;
+                    font-size: 18px;
+                    margin-bottom: 16px;
+                }
+
+                .title {
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    max-width: 345px;
+                    color: $gray;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .education {
+        padding-right: 34px;
+    }
+
+    .experience {
+        padding-left: 34px;
     }
 }
