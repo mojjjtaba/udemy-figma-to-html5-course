@@ -61,22 +61,22 @@
         text-align: center;
         margin-bottom: 42px;
 
+        &:before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: $secondary;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+
         h2 {
             display: inline-block;
             background: $dark_bg;
             padding: 0 24px;
-
-            &:before {
-                content: "";
-                position: absolute;
-                height: 2px;
-                width: 100%;
-                background: $secondary;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: -1;
-            }
         }
     }
 
@@ -88,8 +88,8 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
 
             &:before {
                 content: "";
@@ -99,7 +99,6 @@
                 border-radius: 4px;
                 background: $secondary;
                 transform: rotate(40deg);
-
             }
 
             &:after {
@@ -113,7 +112,6 @@
             }
 
             &.fill {
-
                 &:before,
                 &:after {
                     background: $primary;
@@ -173,10 +171,6 @@
 
         .web-skills {
             .items {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
                 .row {
                     margin-left: -20px;
                     margin-right: -20px;
@@ -221,7 +215,6 @@
                     }
 
                     &:hover {
-
                         &:before,
                         &:after {
                             transform: translate(0, 0);
