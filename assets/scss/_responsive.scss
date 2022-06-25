@@ -4,6 +4,14 @@
     }
 }
 
+@media (max-width: 1199px) {
+    #about_me {
+        .languages-skills .languages-key-skills {
+            padding-right: 12px;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     #home {
         .image {
