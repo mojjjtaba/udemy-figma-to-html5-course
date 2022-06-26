@@ -57,6 +57,7 @@
     header.custom {
         position: relative;
         text-align: center;
+        margin-bottom: 42px;
 
         &:before {
             content: "";
@@ -120,12 +121,12 @@
 
             .languages {
                 .items {
+                    margin-bottom: 43px;
+
                     .item {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        margin-top: 38px;
-                        margin-bottom: 43px;
 
                         &:not(:last-child) {
                             margin-bottom: 16px;
@@ -146,8 +147,6 @@
 
             .key-skills {
                 .items {
-                    margin-top: 53px;
-
                     .item {
                         display: flex;
                         justify-content: space-between;
@@ -163,7 +162,6 @@
 
         .web-skills {
             .items {
-                margin-top: 42px;
                 margin-left: -20px;
                 margin-right: -20px;
 
@@ -223,6 +221,24 @@
 
                     .year {
                         color: #FF9F76;
+                    }
+                }
+            }
+        }
+    }
+
+    .certificates {
+        margin-top: 120px;
+        margin-bottom: 200px;
+
+        .items {
+            .item {
+                img {
+                    width: 100%;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
                     }
                 }
             }
