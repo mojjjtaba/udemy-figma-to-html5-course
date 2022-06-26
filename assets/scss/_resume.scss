@@ -76,6 +76,7 @@
                 border-radius: 8px;
                 text-align: left;
                 z-index: 1;
+                flex-grow: 1;
                 transition: all 0.3s;
 
                 &:before {
@@ -120,5 +121,13 @@
                 }
             }
         }
+    }
+
+    .education {
+        padding-right: 34px;
+    }
+
+    .experience {
+        padding-left: 34px;
     }
 }
