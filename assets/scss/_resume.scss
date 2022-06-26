@@ -51,22 +51,27 @@
             }
 
             &:hover {
-                .icon {
-                    background: darken($primary, 50%);
-
-                    &:before {
-                        background: darken($primary, 50%);
-                    }
+                .icon,
+                .icon:before {
+                    background: rgba(darken($primary, 30%), 0.4);
                 }
 
-                .box:before,
-                .box:after {
-                    width: 100%;
+                .box {
+                    background: transparent;
+
+                    &:before {
+                        border-right-color: rgba(darken($primary, 30%), 0.4);
+                    }
+
+                    &:after {
+                        width: 100%;
+                    }
                 }
             }
 
             .icon {
                 position: relative;
+                top: 23px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -76,7 +81,7 @@
                 background: rgba(255, 255, 255, 0.05);
                 border-radius: 50%;
                 font-size: 18px;
-                transition: all 0.3s 0.3s;
+                transition: all 0.3s;
 
                 &:before {
                     content: "";
@@ -85,7 +90,7 @@
                     height: 162px;
                     top: 70px;
                     background: $secondary;
-                    transition: all 0.3s 0.3s;
+                    transition: all 0.3s;
                 }
             }
 
@@ -93,21 +98,18 @@
                 position: relative;
                 padding: 32px;
                 background: rgba($secondary, 0.75);
-                border-radius: 4px;
+                border-radius: 8px;
                 flex-grow: 1;
-                overflow: hidden;
                 z-index: 1;
 
                 &:before {
                     content: "";
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    width: 0;
-                    background: darken($primary, 15%);
-                    opacity: 0.4;
-                    z-index: -1;
+                    border-right: 9px solid rgba($secondary, 0.75);
+                    border-top: 9px solid transparent;
+                    border-bottom: 9px solid transparent;
+                    top: 36px;
+                    left: -9px;
                     transition: all 0.3s;
                 }
 
@@ -118,10 +120,11 @@
                     left: 0;
                     height: 100%;
                     width: 0;
-                    background: darken($secondary, 30%);
+                    background: darken($primary, 30%);
                     opacity: 0.4;
                     z-index: -1;
-                    transition: all 0.3s 0.3s;
+                    border-radius: 8px;
+                    transition: all 0.3s;
                 }
 
                 .year {
