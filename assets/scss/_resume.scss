@@ -43,12 +43,28 @@
             }
 
             &.last {
+
                 .icon i,
                 h2 {
                     color: $primary;
                 }
             }
-    
+
+            &:hover {
+                .icon {
+                    background: darken($primary, 50%);
+
+                    &:before {
+                        background: darken($primary, 50%);
+                    }
+                }
+
+                .box:before,
+                .box:after {
+                    width: 100%;
+                }
+            }
+
             .icon {
                 position: relative;
                 display: flex;
@@ -60,6 +76,7 @@
                 background: rgba(255, 255, 255, 0.05);
                 border-radius: 50%;
                 font-size: 18px;
+                transition: all 0.3s 0.3s;
 
                 &:before {
                     content: "";
@@ -68,9 +85,10 @@
                     height: 162px;
                     top: 70px;
                     background: $secondary;
+                    transition: all 0.3s 0.3s;
                 }
             }
-    
+
             .box {
                 position: relative;
                 padding: 32px;
@@ -104,13 +122,6 @@
                     opacity: 0.4;
                     z-index: -1;
                     transition: all 0.3s 0.3s;
-                }
-
-                &:hover {
-                    &:before, 
-                    &:after {
-                        width: 100%;
-                    }
                 }
 
                 .year {

@@ -6,12 +6,32 @@
 
 @media (max-width: 1199px) {
     #my_resume {
+        .items {
+            .item {
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    left: -20px;
+                    transform: translateY(-50%); 
+                    background: rgba($secondary, 0.75);
+                    z-index: 2;  
+                    
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
         .education {
             padding-right: 12px;
         }
     
         .experience {
             padding-left: 12px;
+            margin-top: 100px;
         }
     }
 }
