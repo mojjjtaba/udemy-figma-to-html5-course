@@ -60,8 +60,8 @@ function workFilter() {
 }
 
 
-
-let workModal = new bootstrap.Modal(document.getElementById('workModal'));
+let workModalElement = document.getElementById('workModal');
+let workModal = new bootstrap.Modal(workModalElement);
 let workElements = document.querySelectorAll('#my_work .work-list .item .wrap');
 
 workElements.forEach((item) => {
@@ -76,4 +76,17 @@ workElements.forEach((item) => {
 
         workModal.show()
     })
+})
+
+let myWorkElement = document.getElementById('my_work');
+let sidebarElement = document.getElementById('sidebar');
+
+workModalElement.addEventListener('show.bs.modal', function (event) {
+    myWorkElement.classList.add('blur');
+    sidebarElement.classList.add('blur');
+})
+
+workModalElement.addEventListener('hide.bs.modal', function (event) {
+    myWorkElement.classList.remove('blur');
+    sidebarElement.classList.remove('blur');
 })
