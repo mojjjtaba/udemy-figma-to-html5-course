@@ -62,9 +62,8 @@ function workFilter() {
 
 
 let workModal = new bootstrap.Modal(document.getElementById('workModal'));
-
 let workElements = document.querySelectorAll('#my_work .work-list .item .wrap');
-console.log(workElements)
+
 workElements.forEach((item) => {
     item.addEventListener('click', function () {
         document.querySelector("#workModal img").setAttribute('src', item.getAttribute('data-image'));
@@ -78,4 +77,3 @@ workElements.forEach((item) => {
         workModal.show()
     })
 })
-console.log("workElements", workElements)
