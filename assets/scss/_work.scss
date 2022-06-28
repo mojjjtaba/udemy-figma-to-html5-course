@@ -1,3 +1,11 @@
-#work {
-    background: #f00;
+#my_work {
+    .work-items {
+        .item {
+            .wrap {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
