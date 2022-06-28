@@ -58,3 +58,12 @@ function workFilter() {
 
     shuffleInstance.filter(clickedButtonGroup)
 }
+
+var workModal = new bootstrap.Modal(document.getElementById('workModal'))
+const workElements = document.querySelectorAll("#my_work .work-items .wrap");
+workModal.show(); // todo: must be remove
+workElements.forEach((item) => {
+    item.addEventListener('click', function () {
+        workModal.show();
+    })
+})
