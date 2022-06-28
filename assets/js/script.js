@@ -44,11 +44,12 @@ let shuffleInstance = new Shuffle(document.querySelector('#my_work .work-list'),
 
 let filterItems = document.querySelectorAll('#my_work .filters button');
 filterItems.forEach((item) => {
-    item.addEventListener('click', workFilter, item);
+    item.addEventListener('click', workFilter);
 })
 
-function workFilter(item) {
-    let btn = item.currentTarget;
+
+function workFilter() {
+    let btn = event.currentTarget;
     let activeButton = document.querySelector('#my_work .filters button.active');
     let btnGroup = btn.getAttribute('data-group');
 
