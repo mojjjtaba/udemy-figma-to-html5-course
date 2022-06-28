@@ -1,4 +1,13 @@
 #my_work {
+    .filters {
+        button {
+            background: #000;
+            margin-right: 32px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+    }
+
     .work-items {
         .item {
             .wrap {
