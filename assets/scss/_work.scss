@@ -6,7 +6,7 @@
     .filters {
         text-align: center;
         margin-top: 81px;
-        margin-bottom: 71px;
+        margin-bottom: 55px;
 
         button {
             background: transparent;
@@ -15,6 +15,7 @@
             padding: 8px 16px;
             margin-right: 8px;
             margin-left: 8px;
+            margin-bottom: 16px;
 
             &.active {
                 color: #fff;
