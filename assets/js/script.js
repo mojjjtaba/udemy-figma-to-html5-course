@@ -104,3 +104,6 @@ testimonialImages.forEach((item, index) => {
         document.querySelector(`#testimonial .comments .item:nth-child(${position})`).classList.add('active');
     })
 })
+
+let testimonialImagesHeight = document.querySelector('#testimonial .images').clientHeight;
+document.querySelector('#testimonial .images').style.minHeight = `${testimonialImagesHeight}px`;
