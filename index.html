@@ -668,22 +668,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 form">
-                        <form action="">
+                        <form onsubmit="sendContactMessage(this)">
                             <div class="form-item">
                                 <label>Name</label>
-                                <input type="text" name="name">
+                                <input type="text" name="name" required>
                             </div>
                             <div class="form-item">
                                 <label>Email</label>
-                                <input type="email" name="email">
+                                <input type="email" name="email" required>
                             </div>
                             <div class="form-item">
                                 <label>Subject</label>
-                                <input type="text" name="subject">
+                                <input type="text" name="subject" required>
                             </div>
                             <div class="form-item">
                                 <label>Message</label>
-                                <textarea name="message"></textarea>
+                                <textarea name="message" required></textarea>
                             </div>
                             <div class="text-end">
                                 <button type="submit" class="btn-custom-dark">Send message</button>

@@ -95,7 +95,7 @@ let testimonialImagesList = document.querySelectorAll('#testimonial .images img'
 
 testimonialImagesList.forEach((item, index) => {
     let position = index + 1;
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
         document.querySelector('#testimonial .images img.active').classList.remove('active')
         document.querySelector(`#testimonial .images img:nth-child(${position})`).classList.add('active')
 
@@ -115,14 +115,25 @@ document.querySelector('#testimonial .images').style.minHeight = `${testimonialI
 
 let contactFormInputs = document.querySelectorAll('#contact_me form input, #contact_me form textarea');
 contactFormInputs.forEach((item) => {
-    item.addEventListener('focus', function() {
+    item.addEventListener('focus', function () {
         item.parentElement.classList.add('focus-or-fill');
     })
 
-    item.addEventListener('blur', function() {
-        if(!item.value.trim()) {
+    item.addEventListener('blur', function () {
+        if (!item.value.trim()) {
             item.parentElement.classList.remove('focus-or-fill');
         }
     })
 })
-console.log(contactFormInputs)
+
+
+function sendContactMessage(form) {
+    event.preventDefault();
+
+    let formInfo = {
+        name: form.name.value,
+        email: form.email.value,
+        subject: form.subject.value,
+        message: form.message.value
+    } 
+}
