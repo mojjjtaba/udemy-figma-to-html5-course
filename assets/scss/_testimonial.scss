@@ -69,6 +69,7 @@
                             font-weight: 700;
                             line-height: 42px;
                             max-width: 710px;
+                            animation: scaleUp 1s;
 
                             span {
                                 font-size: 86px;
@@ -82,6 +83,7 @@
                     .writer {
                         margin-top: 32px;
                         margin-bottom: 16px;
+                        animation: scaleUp 1s;
 
                         span.field {
                             color: $secondary_gray;
@@ -90,5 +92,15 @@
                 }
             }
         }
+    }
+}
+
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0) rotate(20deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
     }
 }
