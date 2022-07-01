@@ -71,18 +71,36 @@ workElements.forEach((item) => {
         document.querySelector('#workModal .modal-body .completed .value').innerText = item.getAttribute('data-completed')
         document.querySelector('#workModal .modal-body .skills .value').innerText = item.getAttribute('data-skills')
         document.querySelector('#workModal .modal-body .project-link a').setAttribute('href', item.getAttribute('data-project-link'))
-        
+
         workModal.show();
     })
 })
 
 var workModalElement = document.getElementById('workModal')
 workModalElement.addEventListener('show.bs.modal', function (event) {
-   document.getElementById('my_work').classList.add('blur');
-   document.getElementById('sidebar').classList.add('blur');
+    document.getElementById('my_work').classList.add('blur');
+    document.getElementById('sidebar').classList.add('blur');
 })
 
 workModalElement.addEventListener('hide.bs.modal', function (event) {
     document.getElementById('my_work').classList.remove('blur');
     document.getElementById('sidebar').classList.remove('blur');
- })
+})
+
+
+
+
+
+let testimonialImages = document.querySelectorAll('#testimonial .images img');
+
+testimonialImages.forEach((item, index) => {
+    item.addEventListener('click', function() {
+        let position = index + 1;
+
+        document.querySelector('#testimonial .images img.active').classList.remove('active');
+        document.querySelector(`#testimonial .images img:nth-child(${position})`).classList.add('active');
+
+        document.querySelector('#testimonial .comments .item.active').classList.remove('active');
+        document.querySelector(`#testimonial .comments .item:nth-child(${position})`).classList.add('active');
+    })
+})

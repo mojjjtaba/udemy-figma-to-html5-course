@@ -1,0 +1,97 @@
+#testimonial {
+    background-image: url(../images/bg-shape.png);
+    background-repeat: no-repeat;
+    background-position: 58vw 374px;
+    min-height: 100vh;
+
+    .main-box {
+        margin-top: 173px;
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 6px;
+            min-height: 106px;
+
+            img {
+                width: 68px;
+                height: 68px;
+                border-radius: 50%;
+                object-fit: cover;
+                opacity: 0.5;
+                margin-right: 16px;
+                margin-left: 16px;
+                margin-bottom: 16px;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &.active {
+                    opacity: 1;
+                    width: 90px;
+                    height: 90px;
+                }
+
+                &:hover {
+                    filter: saturate(150%) sepia(0.5);
+                    opacity: 1;
+                }
+            }
+        }
+
+        .comments {
+            text-align: center;
+
+            .item {
+                display: none;
+
+                &.active {
+                    display: inline-block;
+                }
+
+                .box {
+                    background: rgba($secondary, 0.75);
+                    padding: 32px;
+                    border-radius: 8px;
+
+                    p {
+                        max-width: 710px;
+                        font-family: 'Playfair Display', serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 42px;
+                        text-align: center;
+                        animation: scaleUp 1s;
+
+                        span {
+                            color: $primary;
+                            font-size: 86px;
+                            line-height: 0;
+                            vertical-align: -33px;
+                        }
+                    }
+                }
+
+                .writer {
+                    margin-top: 32px;
+                    margin-bottom: 16px;
+                    animation: scaleUp 1s;
+
+                    .field {
+                        color: $secondary_gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0) rotate(20deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
