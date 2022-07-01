@@ -107,3 +107,22 @@ testimonialImagesList.forEach((item, index) => {
 
 let testimonialImagesHeight = document.querySelector('#testimonial .images').clientHeight;
 document.querySelector('#testimonial .images').style.minHeight = `${testimonialImagesHeight}px`;
+
+
+
+
+
+
+let contactFormInputs = document.querySelectorAll('#contact_me form input, #contact_me form textarea');
+contactFormInputs.forEach((item) => {
+    item.addEventListener('focus', function() {
+        item.parentElement.classList.add('focus-or-fill');
+    })
+
+    item.addEventListener('blur', function() {
+        if(!item.value.trim()) {
+            item.parentElement.classList.remove('focus-or-fill');
+        }
+    })
+})
+console.log(contactFormInputs)
