@@ -135,5 +135,23 @@ function sendContactMessage(form) {
         email: form.email.value,
         subject: form.subject.value,
         message: form.message.value
-    } 
+    }
+
+    let formData = new FormData();
+    formData.append('name', form.name.value);
+    formData.append('email', form.email.value);
+    formData.append('subject', form.subject.value);
+    formData.append('message', form.message.value);
+
+    fetch('./php/contact.php', {
+        method : 'post',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
 }
