@@ -122,3 +122,6 @@ contactFromItems.forEach((item) => {
         }
     })
 })
+
+
+//new Audio('./assets/audio/day.wav').play()
