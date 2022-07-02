@@ -8,6 +8,7 @@
     border-radius: 8px;
     z-index: 1;
     overflow: hidden;
+    border: none;
     transition: all 0.3s;
 
     &:before {
@@ -29,7 +30,7 @@
         color: #fff;
 
         &:before {
-            transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(3);
         }
     }
 }
