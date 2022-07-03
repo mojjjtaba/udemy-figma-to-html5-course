@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@
                     <span>About Me</span>
                 </li>
                 <li>
-                    <a href="#my_resume" class="inner-link">
+                    <a href="#my_resume" class="active inner-link">
                         <i class="las la-file"></i>
                         <span>My Resume</span>
                     </a>
@@ -59,7 +59,7 @@
                     <span>Testimonial</span>
                 </li>
                 <li>
-                    <a href="#contact_me" class="active inner-link">
+                    <a href="#contact_me" class="inner-link">
                         <i class="las la-phone"></i>
                         <span>Contact Me</span>
                     </a>
@@ -68,7 +68,7 @@
             </ul>
         </nav>
         <div class="toggle-mode">
-            <div class="outer">
+            <div class="outer" onclick="toggleMode()">
                 <div class="inner"></div>
             </div>
         </div>
@@ -134,6 +134,7 @@
                     <div class="col-xxl-6 col-lg-8 info">
                         <header class="has-bg">
                             <img src="assets/images/h1-bg.png" alt="h1 bg">
+                            <img src="assets/images/h1-bg-light.png" alt="h1 bg">
                             <h1>About Me</h1>
                         </header>
                         <h2>Front-End web developer</h2>
@@ -327,10 +328,11 @@
                 </div>
             </div>
         </section>
-        <section id="my_resume">
+        <section id="my_resume" class="active">
             <div class="text-center">
                 <header class="has-bg">
                     <img src="assets/images/h1-bg.png" alt="h1 bg">
+                    <img src="assets/images/h1-bg-light.png" alt="h1 bg">
                     <h1>My Resume</h1>
                 </header>
             </div>
@@ -417,6 +419,7 @@
             <div class="text-center">
                 <header class="has-bg">
                     <img src="assets/images/h1-bg.png" alt="h1 bg">
+                    <img src="assets/images/h1-bg-light.png" alt="h1 bg">
                     <h1>My Work</h1>
                 </header>
             </div>
@@ -437,132 +440,77 @@
             <div class="container">
                 <div class="row work-items">
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Web Developing", "SEO"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/1.png"
-                            data-title="Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/1.png" data-title="Antelope Canyon"
                             data-description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
-                            data-client="Cheetah Academy"
-                            data-completed="December 29 2022"
-                            data-skills="HTML, CSS, Javascript"
-                            data-project-link="#"
-                        >
+                            data-client="Cheetah Academy" data-completed="December 29 2022"
+                            data-skills="HTML, CSS, Javascript" data-project-link="#">
                             <img src="assets/images/works/1.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Web Developing", "Video"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/2.png"
-                            data-title="2. Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/2.png" data-title="2. Antelope Canyon"
                             data-description="2. It is a long established fact that a reader will be distracted by the
                             readable content of a page when looking at its layout. The point of using
                             Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
                             opposed to using 'Content here, content here', making it look like readable
-                            English"
-                            data-client="2. Cheetah Academy"
-                            data-completed="2. December 29 2022"
-                            data-skills="2. HTML, CSS, Javascript"
-                            data-project-link="#2"
-                        >
+                            English" data-client="2. Cheetah Academy" data-completed="2. December 29 2022"
+                            data-skills="2. HTML, CSS, Javascript" data-project-link="#2">
                             <img src="assets/images/works/2.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Video", "SEO"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/3.png"
-                            data-title="Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/3.png" data-title="Antelope Canyon"
                             data-description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
-                            data-client="Cheetah Academy"
-                            data-completed="December 29 2022"
-                            data-skills="HTML, CSS, Javascript"
-                            data-project-link="#"
-                        >
+                            data-client="Cheetah Academy" data-completed="December 29 2022"
+                            data-skills="HTML, CSS, Javascript" data-project-link="#">
                             <img src="assets/images/works/3.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Video"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/4.png"
-                            data-title="Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/4.png" data-title="Antelope Canyon"
                             data-description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
-                            data-client="Cheetah Academy"
-                            data-completed="December 29 2022"
-                            data-skills="HTML, CSS, Javascript"
-                            data-project-link="#"
-                        >
+                            data-client="Cheetah Academy" data-completed="December 29 2022"
+                            data-skills="HTML, CSS, Javascript" data-project-link="#">
                             <img src="assets/images/works/4.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Web Developing", "SEO"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/5.png"
-                            data-title="Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/5.png" data-title="Antelope Canyon"
                             data-description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
-                            data-client="Cheetah Academy"
-                            data-completed="December 29 2022"
-                            data-skills="HTML, CSS, Javascript"
-                            data-project-link="#"
-                        >
+                            data-client="Cheetah Academy" data-completed="December 29 2022"
+                            data-skills="HTML, CSS, Javascript" data-project-link="#">
                             <img src="assets/images/works/5.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["SEO"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/6.png"
-                            data-title="Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/6.png" data-title="Antelope Canyon"
                             data-description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
-                            data-client="Cheetah Academy"
-                            data-completed="December 29 2022"
-                            data-skills="HTML, CSS, Javascript"
-                            data-project-link="#"
-                        >
+                            data-client="Cheetah Academy" data-completed="December 29 2022"
+                            data-skills="HTML, CSS, Javascript" data-project-link="#">
                             <img src="assets/images/works/6.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["SEO"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/7.png"
-                            data-title="Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/7.png" data-title="Antelope Canyon"
                             data-description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
-                            data-client="Cheetah Academy"
-                            data-completed="December 29 2022"
-                            data-skills="HTML, CSS, Javascript"
-                            data-project-link="#"
-                        >
+                            data-client="Cheetah Academy" data-completed="December 29 2022"
+                            data-skills="HTML, CSS, Javascript" data-project-link="#">
                             <img src="assets/images/works/7.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Web Developing"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/8.png"
-                            data-title="Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/8.png" data-title="Antelope Canyon"
                             data-description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
-                            data-client="Cheetah Academy"
-                            data-completed="December 29 2022"
-                            data-skills="HTML, CSS, Javascript"
-                            data-project-link="#"
-                        >
+                            data-client="Cheetah Academy" data-completed="December 29 2022"
+                            data-skills="HTML, CSS, Javascript" data-project-link="#">
                             <img src="assets/images/works/8.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Web Developing"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/9.png"
-                            data-title="Antelope Canyon"
+                        <div class="wrap" data-image="assets/images/works/9.png" data-title="Antelope Canyon"
                             data-description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
-                            data-client="Cheetah Academy"
-                            data-completed="December 29 2022"
-                            data-skills="HTML, CSS, Javascript"
-                            data-project-link="#"
-                        >
+                            data-client="Cheetah Academy" data-completed="December 29 2022"
+                            data-skills="HTML, CSS, Javascript" data-project-link="#">
                             <img src="assets/images/works/9.png" alt="work">
                         </div>
                     </div>
@@ -573,6 +521,7 @@
             <div class="text-center">
                 <header class="has-bg">
                     <img src="assets/images/h1-bg.png" alt="h1 bg">
+                    <img src="assets/images/h1-bg-light.png" alt="h1 bg">
                     <h1>Testimonial</h1>
                 </header>
             </div>
@@ -589,7 +538,7 @@
                         <div class="box">
                             <p>
                                 <span>&lsquo;&lsquo;</span>
-                                1.There are many variations of passages of Lorem Ipsum available, 
+                                1.There are many variations of passages of Lorem Ipsum available,
                                 but the majority have suffered alteration in some form, by injected humour.
                                 <span>&rsquo;&rsquo;</span>
                             </p>
@@ -603,7 +552,7 @@
                         <div class="box">
                             <p>
                                 <span>&lsquo;&lsquo;</span>
-                                2.There are many variations of passages of Lorem Ipsum available, 
+                                2.There are many variations of passages of Lorem Ipsum available,
                                 but the majority have suffered alteration in some form, by injected humour.
                                 <span>&rsquo;&rsquo;</span>
                             </p>
@@ -617,7 +566,7 @@
                         <div class="box">
                             <p>
                                 <span>&lsquo;&lsquo;</span>
-                                3.There are many variations of passages of Lorem Ipsum available, 
+                                3.There are many variations of passages of Lorem Ipsum available,
                                 but the majority have suffered alteration in some form, by injected humour.
                                 <span>&rsquo;&rsquo;</span>
                             </p>
@@ -631,7 +580,7 @@
                         <div class="box">
                             <p>
                                 <span>&lsquo;&lsquo;</span>
-                                4.There are many variations of passages of Lorem Ipsum available, 
+                                4.There are many variations of passages of Lorem Ipsum available,
                                 but the majority have suffered alteration in some form, by injected humour.
                                 <span>&rsquo;&rsquo;</span>
                             </p>
@@ -645,7 +594,7 @@
                         <div class="box">
                             <p>
                                 <span>&lsquo;&lsquo;</span>
-                                5.There are many variations of passages of Lorem Ipsum available, 
+                                5.There are many variations of passages of Lorem Ipsum available,
                                 but the majority have suffered alteration in some form, by injected humour.
                                 <span>&rsquo;&rsquo;</span>
                             </p>
@@ -658,10 +607,11 @@
                 </div>
             </section>
         </section>
-        <section id="contact_me" class="active">
+        <section id="contact_me">
             <div class="text-center">
                 <header class="has-bg">
                     <img src="assets/images/h1-bg.png" alt="h1 bg">
+                    <img src="assets/images/h1-bg-light.png" alt="h1 bg">
                     <h1>Contact Me</h1>
                 </header>
             </div>
@@ -695,7 +645,7 @@
                             <i class="las la-phone"></i>
                             <div class="text">
                                 <span class="title">Phone number:</span>
-                                <a href="tel:+1234567890">044 20 7946 0499  -  044 20 7946 0135</a>
+                                <a href="tel:+1234567890">044 20 7946 0499 - 044 20 7946 0135</a>
                             </div>
                         </div>
                         <div class="item">

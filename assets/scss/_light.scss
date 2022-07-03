@@ -1,0 +1,292 @@
+html[theme="light"] {
+    --bg-shape: url('../images/bg-shape-light.png');
+
+    body {
+        background: #ffffff;
+    }
+
+    * {
+        color: $paragraph_light;
+    }
+
+    .btn-custom-blue {
+        background: #E9EFFF;
+        color: $primary;
+
+        &:hover {
+            color: $paragraph_light;
+        }
+    }
+
+    .btn-custom-dark {
+        background: $secondary_gray_light;
+        color: $paragraph_light;
+    }
+
+    main>section {
+        header.has-bg img {
+            &[src="assets/images/h1-bg-light.png"] {
+                display: block;
+            }
+
+            &[src="assets/images/h1-bg.png"] {
+                display: none;
+            }
+        }
+
+        header.custom {
+            &:before {
+                background: $secondary_gray_light;
+            }
+
+            h2 {
+                background: #fff;
+            }
+        }
+    }
+
+    #sidebar {
+        .logo {
+            filter: invert(1);
+        }
+
+        nav {
+            ul {
+                li {
+                    >span {
+                        background: $secondary_gray_light;
+                    }
+
+                    a {
+                        i {
+                            color: $gray_light;
+                        }
+                    }
+                }
+            }
+        }
+
+        .toggle-mode {
+            .outer {
+                background: $secondary_gray_light;
+
+                .inner {
+                    margin-top: 5px;
+
+                    &:before {
+                        opacity: 0;
+                        background: $secondary_gray_light;
+                    }
+                }
+            }
+        }
+    }
+
+    #home {
+        .info {
+            h1 span {
+                color: $gray_light;
+            }
+
+            .field h2 {
+                color: $gray_light;
+            }
+        }
+
+        .socials ul li a:hover {
+            background: $secondary_gray_light;
+
+            i,
+            span {
+                color: $paragraph_light;
+            }
+        }
+    }
+
+    #about_me {
+        .hero .info {
+            h2 {
+                color: $gray_light;
+            }
+
+            p {
+                color: $paragraph_light;
+            }
+
+            .items .item .value {
+                color: $gray_light;
+            }
+        }
+
+        .languages-skills {
+            .languages-key-skills .languages .items .item .info .level {
+                color: #777777;
+            }
+
+            .web-skills .items .item {
+                background: $secondary_gray_light;
+
+                &:before,
+                &:after {
+                    background: lighten($primary, 20%);
+                }
+
+                .year {
+                    color: $gray_light;
+                }
+            }
+        }
+    }
+
+    #my_resume {
+        .items .item {
+            .icon {
+                background: $secondary_gray_light;
+
+                &:before {
+                    background: darken($secondary_gray_light, 3%);
+                }
+            }
+
+            .box {
+                background: rgba(#EEEEF2, 0.7);
+
+                &:hover {
+                    &:before {
+                        border-right-color: lighten($primary, 25%);
+                    }
+
+                    &:after {
+                        background: lighten($primary, 25%);
+                    }
+                }
+
+                &:before {
+                    border-right-color: rgba(#EEEEF2, 0.7);
+                }
+
+                p {
+                    color: $gray_light;
+                }
+            }
+        }
+    }
+
+    #my_work {
+        .filters {
+            button {
+                &.active {
+                    background: $secondary_gray_light;
+
+                    h4 {
+                        color: $paragraph_light;
+                    }
+                }
+
+                h4 {
+                    color: $gray_light;
+                }
+            }
+        }
+
+        .work-items .item {
+            .wrap {
+                &:after {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .modal#workModal {
+        .modal-dialog .modal-content {
+            background: #fff;
+
+            .modal-body {
+                .modal-close-button {
+                    background: $secondary_gray_light;
+
+                    &:hover {
+                        background: $primary;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .left {
+                    p {
+                        color: $gray_light;
+                    }
+                }
+
+                .right {
+                    .value {
+                        color: $gray_light;
+                    }
+                }
+            }
+        }
+    }
+
+    #testimonial {
+        .main-section .comments .item {
+            .box {
+                background: rgba(#EEEEF2, 0.7);
+
+                &:before {
+                    border-bottom-color: rgba(#EEEEF2, 0.7);
+                }
+            }
+
+            .writer span.field {
+                color: $gray_light;
+            }
+        }
+    }
+
+    #contact_me {
+        .container {
+            .form .form-item {
+                &:before {
+                    background: $secondary_gray_light;
+                }
+
+                &:after {
+                    background: $primary;
+                }
+            }
+
+            .info {
+                .item {
+                    i {
+                        background: $secondary_gray_light;
+                    }
+
+                    .text {
+                        .title {
+                            color: $gray_light;
+                        }
+
+                        a {
+                            color: $paragraph_light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    html[theme="light"] {
+        #sidebar {
+            background: lighten($primary, 25%);
+
+            .toggle-sidebar {
+                background: lighten($primary, 25%);
+            }
+        }
+    }
+}

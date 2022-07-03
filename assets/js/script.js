@@ -124,12 +124,22 @@ contactFromItems.forEach((item) => {
 })
 
 
-//new Audio('./assets/audio/day.wav').play()
 
-document.querySelector('html').style.setProperty('--bg-shape', "url('../images/bg-shape-light.png')");
-let h1BgImages = document.querySelectorAll('img[src="assets/images/h1-bg.png"]');
-h1BgImages.forEach((item) => {
-    item.setAttribute('src', 'assets/images/h1-bg-light.png')
-})
 
-console.log(document.querySelectorAll('img[src="assets/images/h1-bg.png"]'))
+function toggleMode() {
+    let theme = document.querySelector("html").getAttribute('theme');
+
+    if(theme == 'light') {
+        theme = 'dark';
+    } else {
+        theme = 'light';
+    }
+
+    if (theme == 'light') {
+        document.querySelector("html").setAttribute("theme", "light")
+        new Audio('./assets/audio/light.wav').play()
+    } else {
+        document.querySelector("html").setAttribute("theme", "dark")
+        new Audio('./assets/audio/dark.wav').play()
+    }
+}
