@@ -125,3 +125,11 @@ contactFromItems.forEach((item) => {
 
 
 //new Audio('./assets/audio/day.wav').play()
+
+document.querySelector('html').style.setProperty('--bg-shape', "url('../images/bg-shape-light.png')");
+let h1BgImages = document.querySelectorAll('img[src="assets/images/h1-bg.png"]');
+h1BgImages.forEach((item) => {
+    item.setAttribute('src', 'assets/images/h1-bg-light.png')
+})
+
+console.log(document.querySelectorAll('img[src="assets/images/h1-bg.png"]'))
