@@ -149,7 +149,7 @@ html[theme="light"] {
             }
 
             .box {
-                background: rgba(#EEEEF2, 0.7);
+                background: rgba($secondary_gray_light, 0.8);
 
                 &:hover {
                     &:before {
