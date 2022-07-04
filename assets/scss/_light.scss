@@ -251,4 +251,49 @@ html[theme="light"] {
             color: $gray_light !important;
         }
     }
+
+    #contact_me {
+        .container {
+            .form {
+                .form-item {
+                    &:before {
+                        background: $secondary_gray_light;
+                    }
+
+                    &:after {
+                        background: $primary;
+                    }
+
+                    label {
+                        color: $gray_light;
+                    }
+                }
+            }
+
+            .info {
+                .item {
+                    &:hover {
+                        i {
+                            background: $primary;
+                            color: #fff;
+                        }
+                    }
+
+                    i {
+                        background: $secondary_gray_light;
+                    }
+
+                    .text {
+                        .title {
+                            color: $gray_light;
+                        }
+
+                        a {
+                            color: $paragraph_light;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
