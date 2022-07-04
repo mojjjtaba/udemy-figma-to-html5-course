@@ -6,4 +6,39 @@ html[theme="light"] {
     * {
         color: $paragraph_light;
     }
+
+    #sidebar {
+        .logo img {
+            filter: invert(1);
+        }
+
+        nav ul li {
+            a {
+                &:hover i {
+                    color: $paragraph_light;
+                }
+
+                i {
+                    color: $gray_light;
+                }
+            }
+
+            > span {
+                background: $secondary_gray_light;
+            }
+        }
+
+        .toggle-mode .outer {
+            background: $secondary_gray_light;
+
+            .inner {
+                margin-top: 5px;
+                
+                &:before {
+                    background: $secondary_gray_light;
+                    opacity: 0;
+                }
+            }
+        }
+    }
 }
