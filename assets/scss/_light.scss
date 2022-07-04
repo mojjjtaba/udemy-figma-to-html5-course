@@ -1,17 +1,10 @@
 html[theme="light"] {
-    --bg-shape: url('../images/bg-shape-light.png');
-
     body {
         background: #fff;
     }
 
     * {
         color: $paragraph_light;
-    }
-
-    .btn-custom-blue {
-        background: #E9EFFF;
-        color: $primary;
     }
 
     #sidebar {
@@ -44,34 +37,6 @@ html[theme="light"] {
                 &:before {
                     background: $secondary_gray_light;
                     opacity: 0;
-                }
-            }
-        }
-    }
-
-    #home {
-        .info {
-            h1 span {
-                color: $gray_light;
-            }
-
-            .field h2 {
-                color: $gray_light;
-            }
-
-            .socials ul li a {
-                &:hover {
-                    background: $secondary_gray_light;
-                    
-                    i,
-                    span {
-                        color: $paragraph_light;
-                    }
-                }
-
-                i,
-                span {
-                    color: $gray_light;
                 }
             }
         }
