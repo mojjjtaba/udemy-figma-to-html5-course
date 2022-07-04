@@ -73,7 +73,7 @@
                 width: 15px;
                 height: 15px;
                 border-radius: 4px;
-                background: $secondary;
+                background: $primary;
                 transform: rotate(40deg);
             }
 
@@ -83,15 +83,8 @@
                 width: 15px;
                 height: 15px;
                 border-radius: 4px;
-                background: $secondary;
+                background: $primary;
                 transform: rotate(50deg);
-            }
-
-            &.fill {
-                &:before,
-                &:after {
-                    background: $primary;
-                }
             }
         }
     }
