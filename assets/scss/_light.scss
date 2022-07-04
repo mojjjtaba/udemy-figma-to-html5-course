@@ -14,6 +14,33 @@ html[theme="light"] {
         color: $primary;
     }
 
+    .btn-custom-dark {
+        background: $secondary_gray_light;
+        color: $paragraph_light;
+    }
+
+    main > section {
+        header.has-bg img {
+            &[src="assets/images/h1-bg-light.png"] {
+                display: block;
+            }
+
+            &[src="assets/images/h1-bg.png"] {
+                display: none;
+            }
+        }
+
+        header.custom {
+            &:before {
+                background: $secondary_gray_light;
+            }
+
+            h2 {
+                background: #ffffff;
+            }
+        }
+    }
+
     #sidebar {
         .logo img {
             filter: invert(1);  
@@ -73,6 +100,46 @@ html[theme="light"] {
                 span {
                     color: $gray_light;
                 }
+            }
+        }
+    }
+
+    #about_me {
+        .rate span:not(.fill) {
+            &:after,
+            &:before {
+                background: $gray_light;
+            }
+        }
+
+        .hero .info {
+            h2 {
+                color: $gray_light;
+            }
+
+            p {
+                color: $paragraph_light;
+            }
+
+            .items .item .value {
+                color: $gray_light;
+            }
+        }
+
+        .languages-skills .languages-key-skills .languages .items .item .info .level {
+            color: $gray_light;
+        }
+
+        .languages-skills .web-skills .items .item {
+            background: $secondary_gray_light;
+
+            &:after,
+            &:before {
+                background: lighten($primary, 20%);
+            }
+
+            .year {
+                color: $gray_light;
             }
         }
     }
