@@ -143,4 +143,48 @@ html[theme="light"] {
             }
         }
     }
+
+    #my_resume {
+        .items .item {
+            &:hover {
+                .icon {
+                    background: lighten($primary, 25%);
+
+                    &:before {
+                        background: lighten($primary, 25%);
+                    }
+                }
+
+                .box {
+                    &:before {
+                        border-right-color: lighten($primary, 25%);
+                    }
+
+                    &:after {
+                        background: lighten($primary, 25%);
+                    }
+                }
+            }
+
+            .icon {
+                background: $secondary_gray_light;
+
+                &:before {
+                    background: darken($secondary_gray_light, 5%);
+                }
+            }
+
+            .box {
+                background: rgba($secondary_gray_light, 0.8);
+
+                &:before {
+                    border-right-color: rgba($secondary_gray_light, 0.8);
+                }
+
+                p {
+                    color: $gray_light;
+                }
+            }
+        }
+    }
 }
