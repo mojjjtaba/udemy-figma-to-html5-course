@@ -131,15 +131,11 @@ function toggleMode() {
 
     if(theme == 'light') {
         theme = 'dark';
+        new Audio('./assets/audio/dark.wav').play();
     } else {
         theme = 'light';
+        new Audio('./assets/audio/light.wav').play();
     }
 
-    if (theme == 'light') {
-        document.querySelector("html").setAttribute("theme", "light")
-        new Audio('./assets/audio/light.wav').play()
-    } else {
-        document.querySelector("html").setAttribute("theme", "dark")
-        new Audio('./assets/audio/dark.wav').play()
-    }
+    document.querySelector("html").setAttribute("theme", theme);
 }

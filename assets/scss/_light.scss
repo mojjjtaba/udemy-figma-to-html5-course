@@ -192,7 +192,7 @@ html[theme="light"] {
         .work-items .item {
             .wrap {
                 &:after {
-                    color: #fff;
+                    background: rgba(#fff, 0.8);
                 }
             }
         }
