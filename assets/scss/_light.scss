@@ -237,4 +237,18 @@ html[theme="light"] {
             }
         }
     }
+
+    #testimonial {
+        .main-section .comments .item .box {
+            background: rgba($secondary_gray_light, 0.8);
+
+            &:before {
+                border-bottom-color: rgba($secondary_gray_light, 0.8);
+            }
+        }
+
+        .writer span.field {
+            color: $gray_light !important;
+        }
+    }
 }
