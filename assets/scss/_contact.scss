@@ -50,6 +50,7 @@
                     position: absolute;
                     top: 17px;
                     color: $secondary_gray;
+                    z-index: -1;  
                     transition:all 0.3s;
                 }
 
@@ -102,9 +103,9 @@
                         color: $gray;
                     }
 
-                    a {
-                        display: block;
-                        color: #fff;
+                    a { 
+                        display: block; 
+                        color: #fff;  
                         text-decoration: none;
                     }
                 }
